@@ -13,11 +13,11 @@ class ItemGridView extends StatelessWidget {
           builder: (context) => new AlertDialog(
             backgroundColor: Colors.green,
             content: Container(
-              height: 290,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Column(
+                mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
