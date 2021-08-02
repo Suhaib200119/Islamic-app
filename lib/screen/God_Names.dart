@@ -27,8 +27,8 @@ class God_Names extends StatelessWidget {
             ),
             children: [
               ...names.map((e) {
-                return ItemGridView(e, Colors.green);
-              }),
+                return ItemGridView(e.name,e.description, Colors.green);
+              }).toList(),
             ],
           ),
         ),
