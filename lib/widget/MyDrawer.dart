@@ -50,8 +50,13 @@ class MyDrawer extends StatelessWidget {
                 color: Colors.white,
               ),
               onTap: () {
-                Navigator.of(context).pushNamed(Rosary.screenName);
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return Rosary_StateFul();
+                }));
               },
+              // onTap: () {
+              //   Navigator.of(context).pushNamed(Rosary.screenName);
+              // },
             ),
             SizedBox(
               height: 10,
@@ -71,8 +76,13 @@ class MyDrawer extends StatelessWidget {
                 color: Colors.white,
               ),
               onTap: () {
-                Navigator.of(context).pushNamed(Information.screenName);
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return Information();
+                }));
               },
+              // onTap: () {
+              //   Navigator.of(context).pushNamed(Information.screenName);
+              // },
             ),
             SizedBox(
               height: 10,
@@ -112,8 +122,13 @@ class MyDrawer extends StatelessWidget {
                 color: Colors.white,
               ),
               onTap: () {
-                Navigator.of(context).pushNamed( About_App.screenName);
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return About_App();
+                }));
               },
+              // onTap: () {
+              //   Navigator.of(context).pushNamed( About_App.screenName);
+              // },
             ),
           ],
         ),

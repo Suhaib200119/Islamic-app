@@ -9,8 +9,10 @@ import 'package:islamic/screen/Sleep_and_WakeUp.dart';
 import 'package:islamic/screen/Tasabih.dart';
 import 'package:islamic/widget/MyDrawer.dart';
 
+import 'SplashScreen.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(MainSplashScreen());
 }
 
 class MyApp extends StatelessWidget {
@@ -23,17 +25,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
-      routes: {
-        God_Names.nameScreen: (context) => God_Names(),
-        Morning_and_Evening.nameScreen: (context) => Morning_and_Evening(),
-        Remembrances_after_prayer.screenName: (context) => Remembrances_after_prayer(),
-        Tasabih.nameScreen:(context)=>Tasabih(),
-        Sleep_and_WakeUp.screenName:(context)=>Sleep_and_WakeUp(),
-        Rosary.screenName:(context)=>Rosary_StateFul(),
-        Information.screenName:(context)=>Information(),
-        About_App.screenName:(context)=>About_App(),
-
-      },
+      // routes: {
+      //   God_Names.nameScreen: (context) => God_Names(),
+      //   Morning_and_Evening.nameScreen: (context) => Morning_and_Evening(),
+      //   Remembrances_after_prayer.screenName: (context) => Remembrances_after_prayer(),
+      //   Tasabih.nameScreen:(context)=>Tasabih(),
+      //   Sleep_and_WakeUp.screenName:(context)=>Sleep_and_WakeUp(),
+      //   Rosary.screenName:(context)=>Rosary_StateFul(),
+      //   Information.screenName:(context)=>Information(),
+      //   About_App.screenName:(context)=>About_App(),
+      //
+      // },
     );
   }
 }
@@ -82,9 +84,14 @@ class _MyHomePageState extends State<MyHomePage> {
               elevation: 20,
               focusElevation: 30,
               hoverElevation: 30,
-              onPressed: () {
-                Navigator.of(context).pushNamed(God_Names.nameScreen);
+              onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return God_Names();
+                }));
               },
+              // onPressed: () {
+              //   Navigator.of(context).pushNamed(God_Names.nameScreen);
+              // },
             ),
             SizedBox(
               height: 20,
@@ -103,9 +110,14 @@ class _MyHomePageState extends State<MyHomePage> {
               elevation: 20,
               focusElevation: 30,
               hoverElevation: 30,
-              onPressed: () {
-                Navigator.of(context).pushNamed(Morning_and_Evening.nameScreen);
+              onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return Morning_and_Evening();
+                }));
               },
+              // onPressed: () {
+              //   Navigator.of(context).pushNamed(Morning_and_Evening.nameScreen);
+              // },
             ),
             SizedBox(
               height: 20,
@@ -124,10 +136,15 @@ class _MyHomePageState extends State<MyHomePage> {
               elevation: 20,
               focusElevation: 30,
               hoverElevation: 30,
-              onPressed: () {
-                Navigator.of(context)
-                    .pushNamed(Remembrances_after_prayer.screenName);
+              onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return Remembrances_after_prayer();
+                }));
               },
+              // onPressed: () {
+              //   Navigator.of(context)
+              //       .pushNamed(Remembrances_after_prayer.screenName);
+              // },
             ),
             SizedBox(
               height: 20,
@@ -146,9 +163,14 @@ class _MyHomePageState extends State<MyHomePage> {
               elevation: 20,
               focusElevation: 30,
               hoverElevation: 30,
-              onPressed: () {
-                Navigator.of(context).pushNamed(Tasabih.nameScreen);
+              onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return Tasabih();
+                }));
               },
+              // onPressed: () {
+              //   Navigator.of(context).pushNamed(Tasabih.nameScreen);
+              // },
             ),
             SizedBox(
               height: 20,
@@ -167,9 +189,14 @@ class _MyHomePageState extends State<MyHomePage> {
               elevation: 20,
               focusElevation: 30,
               hoverElevation: 30,
-              onPressed: () {
-                Navigator.of(context).pushNamed(Sleep_and_WakeUp.screenName);
+              onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                  return Sleep_and_WakeUp();
+                }));
               },
+              // onPressed: () {
+              //   Navigator.of(context).pushNamed(Sleep_and_WakeUp.screenName);
+              // },
             ),
           ],
         ),
