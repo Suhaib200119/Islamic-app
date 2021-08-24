@@ -18,7 +18,7 @@ class SplashScreenState extends State<MainSplashScreen> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: SplashScreen(
-            seconds: 4,
+            seconds: 2,
             navigateAfterSeconds: MyHomePage(),
             backgroundColor: Colors.green,
             image: Image.asset("assets/images/logo.png"),

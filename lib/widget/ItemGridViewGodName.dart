@@ -37,13 +37,7 @@ class ItemGridView extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           color: Colors.white,
                           fontSize: 20)),
-                  IconButton(
-                    onPressed: () => Navigator.of(context).pop(false),
-                    icon: Icon(
-                      Icons.close,
-                      color: Colors.red,
-                    ),
-                  ),
+
                 ],
               ),
             ),
