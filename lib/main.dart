@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:islamic/screen/About_App.dart';
 import 'package:islamic/screen/God_Names.dart';
-import 'package:islamic/screen/Information.dart';
 import 'package:islamic/screen/Morning_and_Evening.dart';
 import 'package:islamic/screen/Remembrances%20_after_prayer.dart';
-import 'package:islamic/screen/Rosary.dart';
 import 'package:islamic/screen/Sleep_and_WakeUp.dart';
 import 'package:islamic/screen/Tasabih.dart';
 import 'package:islamic/widget/MyDrawer.dart';
